@@ -10,6 +10,7 @@
     --color-green-100: rgb(87, 151, 28);
     --color-green-800:rgb(4, 42, 13);
     --radius:8px;
+    --gradient: linear-gradient(rgba(0 , 0, 0  .6), rgba(0, 0, 0 , .3));
 }
 html{
     font-size: 62.5%;
@@ -35,3 +36,58 @@ img{
     max-width: 100%;
 }
 /*  Fim da formatação base  */
+
+/* Hero da pagina da pagina*/
+
+.hero{
+    width: 100%;
+    min-height: 100dvh;
+    padding: 3rem;
+    background-image:  url(../images/index/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: var(--color-light);
+    display :flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header h2{
+    font-size: 4.5rem;
+    position: relative;
+    z-index: 2;
+
+}
+span{
+    color: var(--color-green-100);
+}
+
+.header-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.sanduiche{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.barra{
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background-color: var(--color-light);
+    margin: .5rem auto;
+    border-radius: var(--radius);
+    transition: .5s;
+}
+/* Fim do hero da pagina */
